@@ -118,9 +118,13 @@ body {
 }
 
 
-.hero {
+.hero, .detail{
     background-color: #fff;
     border-radius: 10px;
+}
+
+.detail {
+    margin: 25px auto;
 }
 
 .spin img{
@@ -359,3 +363,157 @@ figure.slider figure figcaption {
         page-break-after: avoid;
     }
 }
+
+    html {
+        max-width:99%;
+    }
+    h1 {
+        color: #000;
+        font-size: 22px;
+        font-weight: 300;
+        width: 88%;
+        line-height: 33px;
+    }
+    h2 {
+        color: #000;
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: left;
+        line-height: 25px;
+    }
+    p {
+        font-size: 13px;
+    }
+    .header {
+        background: linear-gradient(90deg, #D2450E 30%, white);
+    }
+    .header2 {
+        background-color: black;
+        color: white;
+        font-size: 16px;
+    }
+    .header2 h2 {
+        color: white;
+        padding: 0 10px;
+    }
+    .bullets {
+        border-style: solid;
+        border-width: 1px 0 0 0;
+        max-width: 75%;
+        margin-left: 30px;
+    }
+    .bullets li {
+        font-size: 13px;
+        font-weight: 300;
+        color: #000;
+        line-height: 18px;
+        margin: 15px 0px;
+    }
+    .header-img {
+        width: 20%;
+        padding: 10px 0;
+    }
+    .right {
+        float: right;
+    }
+    .headline {
+        margin: 20px 0;
+    }
+    .images-container {
+    }
+    .thumbs {
+        position: relative;
+        padding-top: 125%;
+        margin: 10px auto;
+        width: 100%
+    }
+    .thumbs > img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 0.5s;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+    }
+    .thumbs input {
+        display: none;
+    }
+    .thumbs label {
+        width: 60px;
+        margin: 0 2px;
+        border: 2px solid #999;
+        cursor: pointer;
+        transition: all 0.5s;
+        opacity: 0.6;
+        box-sizing: border-box;
+    }
+    .thumbs label img {
+        width: 100%;
+        display: block;
+    }
+    .thumbs input:checked + label {
+        border-color: #666;
+        opacity: 1;
+    }
+    .thumbs input ~ img {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    .thumbs input:checked + label + img {
+        opacity: 1;
+        transform: scale(1);
+    }
+    footer {
+        background-color: #111E22;
+        color: #777;
+        padding: 20px;
+        font-size: 13px;
+    }
+    .moneyback img {
+        max-height: 110px;
+    }
+    footer li {
+        list-style: none;
+    }
+    footer h2 {
+        color: #e25333;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .after-sales ul, .delivery ul{
+        padding-left: 0;
+    }
+    .delivery, .moneyback, .after-sales {
+        text-align: center;
+    }
+    .buy-now{
+        color: #e25333;
+    }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        .headline {
+            margin: 20px 0 0 0;
+        }
+        h1 {
+            font-size: 20px;
+            width: 100%;
+            line-height: 29px;
+        }
+        .header2 h2 {
+            margin: 0;
+            line-height: 22px;
+        }
+        .header-img {
+            width: 50%;
+            padding: 10px 0;
+        }
+        .header2 .right {
+            float: none;
+        }
+        .bullets {
+            margin-left: 0;
+            max-width: 100%;
+        }
+        .bullets li {
+            margin-bottom: 15px;
+        }
+    }
