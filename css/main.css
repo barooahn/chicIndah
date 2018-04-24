@@ -98,11 +98,15 @@ textarea {
    ========================================================================== */
 
 body {
-    background-color: #e7e7e7;
+    background-color: #f5f4f4;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 .logo-row {
-    background-color: #e7e7e7;
+    background-color: #f5f4f4;
     margin: 1em 0;
 }
 
@@ -121,6 +125,7 @@ body {
 .hero, .detail{
     background-color: #fff;
     border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #88888850;
 }
 
 .detail {
@@ -173,7 +178,24 @@ figure.slider figure figcaption {
   font-size: 2rem; padding: .6rem; 
 }
 
+.offer {
+    background-color: #ff0000;
+    margin: 15px 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    padding: 10px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 11px rgba(0, 0, 0, 0.77);
+    box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.77);
+}
 
+.offer .nn {
+    font-size: 3em;
+    text-transform: none;
+    padding-top: 15px;
+}
 
 
 
@@ -418,7 +440,7 @@ figure.slider figure figcaption {
         float: right;
     }
     .headline {
-        margin: 20px 0;
+        margin: 20px 0 0 30px;
     }
     .images-container {
     }
@@ -433,7 +455,6 @@ figure.slider figure figcaption {
         left: 0;
         top: 0;
         transition: all 0.5s;
-        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
     }
     .thumbs input {
         display: none;
